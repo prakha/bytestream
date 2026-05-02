@@ -1,0 +1,5 @@
+boto3
+redis
+psycopg2-binary
+ffmpeg-python
+python-dotenv
