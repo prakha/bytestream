@@ -73,10 +73,8 @@ services:
     restart: always
 
   transcoder-service:
-    build: ./transcoder-service
+    build: ./transcoder-service-go
     env_file: ./transcoder-service/.env
-    environment:
-      - PYTHONUNBUFFERED=1
     depends_on:
       - postgres
       - redis
